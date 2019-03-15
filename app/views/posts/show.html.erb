@@ -16,7 +16,7 @@ Comments:<br></br>
 Commenters:<br></br>
 
 <% @post.users.uniq.each do |user| %>
-<% binding.pry %>
+
 <%= link_to user.username, user_path(user) %>
 <% end %>
 
